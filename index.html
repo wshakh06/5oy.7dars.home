@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=uz_UZ" type="text/javascript"></script>
+    <title>Meps</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top_element">
+            <h1 class="top-text">IP Address Tracker</h1>
+            <form id="form">
+                <input id="searchInput" class="top-input" type="text" required placeholder="Search for any IP address or domain">
+                <button id="form-btn" type="submit" class="form-btn"><img src="/images/btn-logo.svg" alt="btn-logo"></button>
+            </form>
+            <div class="middle_eleent">
+                <div class="element1">
+                    <h1 class="text1-1">IP Address</h1>
+                    <h1 class="text1-2">192.212.174.101</h1>
+                </div>
+                <div class="middle-border2"></div>
+                <div class="element2">
+                    <h1 class="text1-1">Location</h1>
+                    <h1 class="text1-2">Brooklyn, NY <br> 10001</h1>
+                </div>
+                <div class="middle-border3"></div>
+                <div class="element3">
+                    <h1 class="text1-1">Timezone</h1>
+                    <h1 class="text1-2">UTC -05:00</h1>
+                </div>
+                <div class="middle-border4"></div>
+                <div class="element4">
+                    <h1 class="text1-1">ISP</h1>
+                    <h1 class="text1-2">SpaceX <br> Starlink</h1>
+                </div>
+            </div>
+            <div id="map" style="width: 1440px; height: 700px;"></div>
+        </div>
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>
